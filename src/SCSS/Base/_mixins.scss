@@ -1,0 +1,28 @@
+@mixin telefono(){
+
+    @media(min-width: $telefono){
+        @content; //Hace que el contenido se tome de acuerdo a como se mande
+
+    }
+}
+
+@mixin tablet(){
+
+    @media(min-width: $tablet){
+        @content; //Hace que el contenido se tome de acuerdo a como se mande
+    }
+}
+
+@mixin desktop(){
+
+    @media(min-width: $desktop){
+        @content; //Hace que el contenido se tome de acuerdo a como se mande
+
+    }
+}
+
+@mixin grid ($columnas, $espaciado) {
+    display: grid;
+    grid-template-columns: repeat($columnas, 1fr);
+    gap: $espaciado;
+}
